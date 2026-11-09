@@ -1,17 +1,151 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css">
-    <title>Phaser - Template</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eaf2e7" />
+  <meta name="description" content="校园雨天通行规划挑战：用有限预算改善雨天通行安全与舒适度。" />
+  <title>雨落校园｜校园雨天通行规划挑战</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
-<body>
-    <div id="app">
-        <div id="game-container"></div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
+</head>
+<body data-phase="build">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">雨</div>
+        <div>
+          <h1>雨落校园</h1>
+          <p>中财校园主题创作 · 校园雨天通行规划挑战</p>
+        </div>
+      </div>
+      <div class="header-stats">
+        <details class="seed-details"><summary>复现信息</summary>
+          <div><span>地图种子</span><strong id="map-seed" data-seed="">—</strong></div>
+          <div><span>事件种子</span><strong id="event-seed" data-seed="">—</strong></div>
+        </details>
+        <div class="phase-chip" id="phase-chip">建设阶段</div>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="map-card" aria-label="校园地图">
+        <div class="map-heading">
+          <div>
+            <h2>校园通行网络</h2>
+            <p id="round-caption">为校园安排绿化与排水，准备应对五轮天气</p>
+          </div>
+          <div class="weather-badge" id="weather-badge">晴天 · 白天</div>
+        </div>
+        <div id="game-container" aria-label="可交互校园地图"></div>
+        <div class="map-legend" aria-label="地图图例">
+          <span><i class="legend-dot road"></i>道路</span>
+          <span><i class="legend-dot building"></i>校园建筑</span>
+          <span><i class="legend-dot slot"></i>建设操作位</span>
+          <span><i class="legend-dot water"></i>积水深度</span>
+        </div>
+        <div class="result-panel" id="result-panel" hidden>
+          <div class="result-hero">
+            <div><span class="eyebrow">五轮挑战完成</span><h2 id="result-grade">—</h2></div>
+            <div class="result-score"><strong id="total-score">—</strong><span>综合评分</span></div>
+          </div>
+          <div class="result-metrics">
+            <div><span>平均安全度</span><strong id="avg-safety">—</strong></div>
+            <div><span>舒适度</span><strong id="avg-comfort">—</strong></div>
+            <div><span>建设支出</span><strong id="spent-budget">—</strong></div>
+            <div><span>剩余预算</span><strong id="remaining-budget">—</strong></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>轮次</th><th>时段 / 天气</th><th>道路事故</th><th>建筑入口</th><th>安全度</th></tr></thead>
+              <tbody id="round-results"></tbody>
+            </table>
+          </div>
+          <div class="result-actions">
+            <button class="button button-secondary" id="optimize-button">优化当前方案</button>
+            <button class="button button-primary" id="new-challenge-result">全新挑战</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="control-card">
+        <div class="controls-scroll">
+        <section class="budget-panel">
+          <div class="section-title"><h2>建设预算</h2><span id="phase-label">准备建设</span></div>
+          <div class="budget-line"><strong id="budget-remaining">30</strong><span>可用预算</span><strong id="comfort-estimate">15</strong><span>舒适度</span></div>
+          <div class="budget-track"><span id="budget-meter"></span></div>
+          <p class="budget-note" id="budget-note">预算为暂定默认值；只限制建设，不计入最终评分。</p>
+        </section>
+
+        <section class="tool-section">
+          <div class="section-title"><h2>设施工具</h2><span>选择后直接点击地图上的高亮地块</span></div>
+          <div class="tool-grid">
+            <button class="tool-button is-selected" data-tool="broadleaf" title="阔叶树：每棵舒适度 +5；小雨增加少量安全度" aria-pressed="true">
+              <span class="tool-icon tree-icon" aria-hidden="true">♣</span><span class="tool-name">阔叶树</span><span class="tool-cost">— / 棵</span>
+            </button>
+            <button class="tool-button" data-tool="pine" title="松树：与其他树种效果相同" aria-pressed="false">
+              <span class="tool-icon pine-icon" aria-hidden="true">▲</span><span class="tool-name">松树</span><span class="tool-cost">— / 棵</span>
+            </button>
+            <button class="tool-button" data-tool="autumn" title="秋色树：与其他树种效果相同" aria-pressed="false">
+              <span class="tool-icon autumn-icon" aria-hidden="true">♣</span><span class="tool-name">秋色树</span><span class="tool-cost">— / 棵</span>
+            </button>
+            <button class="tool-button" data-tool="lawn" title="草坪：每块舒适度 +2；邻近道路每步吸收少量雨水" aria-pressed="false">
+              <span class="tool-icon grass-icon" aria-hidden="true">▧</span><span class="tool-name">草坪</span><span class="tool-cost">— / 块</span>
+            </button>
+            <button class="tool-button" data-tool="grass-tuft" title="草丛：与草坪效果相同，只改变外观" aria-pressed="false">
+              <span class="tool-icon tuft-icon" aria-hidden="true">♧</span><span class="tool-name">草丛</span><span class="tool-cost">— / 块</span>
+            </button>
+            <button class="tool-button" data-tool="shrub" title="矮灌木：与草坪效果相同，只改变外观" aria-pressed="false">
+              <span class="tool-icon shrub-icon" aria-hidden="true">♣</span><span class="tool-name">矮灌木</span><span class="tool-cost">— / 块</span>
+            </button>
+            <button class="tool-button" data-tool="drain" title="邻近道路每步排走水量；每格只计算一次" aria-pressed="false">
+              <span class="tool-icon drain-icon" aria-hidden="true">⊕</span><span class="tool-name">排水口</span><span class="tool-cost">— / 个</span>
+            </button>
+            <button class="tool-button" data-tool="canopy" title="降低该建筑入口的降雨量与风险概率" aria-pressed="false">
+              <span class="tool-icon canopy-icon" aria-hidden="true">⌂</span><span class="tool-name">遮雨棚</span><span class="tool-cost">— / 栋</span>
+            </button>
+          </div>
+          <div class="preview-message" id="preview-message" aria-live="polite">选择树木或绿化外观，再点击地图上高亮地块预览整组设施。</div>
+        </section>
+
+        <section class="slot-section">
+          <div class="section-title"><h2>道路操作位</h2><span>8组可选位置</span></div>
+          <div class="slot-list" id="slot-list"></div>
+        </section>
+
+        <section class="building-section">
+          <div class="section-title"><h2>校园建筑</h2><span>入口遮雨状态</span></div>
+          <div class="building-list" id="building-list"></div>
+        </section>
+
+        <section class="run-summary" id="run-summary" hidden aria-label="五轮天气挑战进度">
+          <h2>正在经历五轮天气</h2>
+          <div class="run-stage"><strong id="run-round">第 1 / 5 轮</strong><span id="run-weather">—</span></div>
+          <div class="run-progress" aria-label="当前轮次积水演进"><span id="run-progress-meter"></span></div>
+          <p id="run-flood" class="run-flood">积水正在变化</p>
+          <p class="run-hint">设施配置已锁定。观察道路积水，挑战结束后统一评级。</p>
+        </section>
+        <section class="event-section">
+          <div class="section-title"><h2>挑战播报</h2><span id="tick-label">—</span></div>
+          <p class="event-message" id="event-message" aria-live="polite">先安排树木、草坪、排水口或遮雨棚，再开始五轮挑战。</p>
+        </section>
+
+        </div>
+        <div class="action-grid">
+          <button class="button button-secondary" id="undo-button" disabled>撤销上一步</button>
+          <button class="button button-secondary" id="clear-button">清空建设</button>
+          <button class="button button-secondary" id="new-map-button">重新生成校园</button>
+          <button class="button button-primary" id="start-button">开始五轮挑战</button>
+          <button class="button button-skip" id="skip-button" hidden>跳过动画并结算</button>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer-note">每轮道路积水从零开始 · 设施和预算在五轮间保留 · 游戏结果由地图与事件种子复现</footer>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
+
+
+
+

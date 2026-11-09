@@ -1,0 +1,664 @@
+{
+  "manifestFormat": 2,
+  "projectRelativeRoot": "public/assets/campus/v4",
+  "buildings": {
+    "library": [
+      [
+        81,
+        82,
+        85
+      ],
+      [
+        124,
+        125,
+        130
+      ],
+      [
+        362,
+        282,
+        364
+      ]
+    ],
+    "teaching": [
+      [
+        135,
+        136,
+        137
+      ],
+      [
+        124,
+        128,
+        130
+      ],
+      [
+        363,
+        365,
+        364
+      ]
+    ],
+    "canteen": [
+      [
+        43,
+        44,
+        45
+      ],
+      [
+        70,
+        71,
+        72
+      ],
+      [
+        205,
+        282,
+        211
+      ]
+    ],
+    "shop": [
+      [
+        328,
+        329,
+        330
+      ],
+      [
+        205,
+        206,
+        211
+      ],
+      [
+        281,
+        282,
+        283
+      ]
+    ],
+    "dormitory": [
+      [
+        108,
+        109,
+        113
+      ],
+      [
+        178,
+        179,
+        184
+      ],
+      [
+        362,
+        363,
+        364
+      ]
+    ]
+  },
+  "buildingNativeSizes": {
+    "1": "16x16",
+    "2": "32x32",
+    "3": "48x48"
+  },
+  "files": [
+    {
+      "source": "Pulse/terrain_day/grass_1.png",
+      "target": "public/assets/campus/v4/terrain/day-grass_1.png",
+      "sha256": "a92ea8c681eadce81a7e7a771cad95e6741aa34216c440a692439ea502b0e7e7"
+    },
+    {
+      "source": "Pulse/terrain_day/grass_2.png",
+      "target": "public/assets/campus/v4/terrain/day-grass_2.png",
+      "sha256": "490fabfe0bfd502365183f04bd051ec754b0e915268f96e5ee8544b16deb25a9"
+    },
+    {
+      "source": "Pulse/terrain_day/grass_3.png",
+      "target": "public/assets/campus/v4/terrain/day-grass_3.png",
+      "sha256": "472ba8b85ecbf4ecc80ac11d499effa8aab265918e79420855a1d7b3019915a0"
+    },
+    {
+      "source": "Pulse/terrain_day/sidewalk.png",
+      "target": "public/assets/campus/v4/terrain/day-sidewalk.png",
+      "sha256": "10c046eb157bbf4c79cf5c50c48acd939ab932319d59d8fb7e9c49a4aef5d123"
+    },
+    {
+      "source": "Pulse/terrain_day/asphalt.png",
+      "target": "public/assets/campus/v4/terrain/day-asphalt.png",
+      "sha256": "f58469f1203128d77d6b51232aacf9f50c856f7b237b5c2a7c575b4242c0fffe"
+    },
+    {
+      "source": "Pulse/terrain_day/asphalt_dashes.png",
+      "target": "public/assets/campus/v4/terrain/day-asphalt_dashes.png",
+      "sha256": "c7f723d1710749f75c223e4b5c561da5d3339132e772423856104c003286dda5"
+    },
+    {
+      "source": "Pulse/terrain_night/grass_1.png",
+      "target": "public/assets/campus/v4/terrain/night-grass_1.png",
+      "sha256": "2275cac5d10163a28e1af4853e593e56f83859b580b93fb2662bbe5b689cf634"
+    },
+    {
+      "source": "Pulse/terrain_night/grass_2.png",
+      "target": "public/assets/campus/v4/terrain/night-grass_2.png",
+      "sha256": "ec9d4644d10da435f10960d0b63035724555b4b86ad19985e95775bf59da453a"
+    },
+    {
+      "source": "Pulse/terrain_night/grass_3.png",
+      "target": "public/assets/campus/v4/terrain/night-grass_3.png",
+      "sha256": "3315170ac912d9ade3d7b1097489f7481f901681cfc1f1ce1a76e2f4534d76ff"
+    },
+    {
+      "source": "Pulse/terrain_night/sidewalk.png",
+      "target": "public/assets/campus/v4/terrain/night-sidewalk.png",
+      "sha256": "b9b3a05cd00e1d9169cf3ede8e06a3dc76414a37393dad5b72a9bae007307b53"
+    },
+    {
+      "source": "Pulse/terrain_night/asphalt.png",
+      "target": "public/assets/campus/v4/terrain/night-asphalt.png",
+      "sha256": "5f88ab44580db9b742812f3529e9893c9d242f4c2dadcfdc66cc22291ba7df73"
+    },
+    {
+      "source": "Pulse/terrain_night/asphalt_dashes.png",
+      "target": "public/assets/campus/v4/terrain/night-asphalt_dashes.png",
+      "sha256": "50658d672d6c149ac2f18404a8edc74bebb554780fb343b7efad9556016fba9d"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_00.png",
+      "target": "public/assets/campus/v4/roads/road-00.png",
+      "sha256": "7b17c8348d15c37ff103d5eae7a07a9f69534cae2b0662ff86c52bf040c4785e"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_01.png",
+      "target": "public/assets/campus/v4/roads/road-01.png",
+      "sha256": "8a6dc8987fce125a0f99b7f920993be5c3132ca213508357d83a90ca661e0826"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_02.png",
+      "target": "public/assets/campus/v4/roads/road-02.png",
+      "sha256": "f6a67f866a9fff0b00d21d355db7246a330a71deaf9578cec021ab72d5bf14e6"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_03.png",
+      "target": "public/assets/campus/v4/roads/road-03.png",
+      "sha256": "dfda1ac79ea8c3f94be9cf831415feb6d6f071b78d8aba06e152dd51f3ee4d84"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_04.png",
+      "target": "public/assets/campus/v4/roads/road-04.png",
+      "sha256": "2c4339d157501f5b46ee533f1131a9cee0b5054f00cdb8c69458d059db71b69d"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_05.png",
+      "target": "public/assets/campus/v4/roads/road-05.png",
+      "sha256": "071af6ee5ee98b72763540a937e2b1faf546fa9912ccc944d57134f34adfcad6"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_06.png",
+      "target": "public/assets/campus/v4/roads/road-06.png",
+      "sha256": "0f740cdc3bdac3ef6a31b5f70eec10909da9fa97c1d8603d2f73ece7deb77ff0"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_07.png",
+      "target": "public/assets/campus/v4/roads/road-07.png",
+      "sha256": "03c755f25415a349deb22ab7ca0b202f0ef2b70099dd90964783aa5cc1410981"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_08.png",
+      "target": "public/assets/campus/v4/roads/road-08.png",
+      "sha256": "3e21ba1a2fc91765f1b0e07c22ed655afe4851f28b3aeb948be8c7dc69187bb1"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_09.png",
+      "target": "public/assets/campus/v4/roads/road-09.png",
+      "sha256": "d8375ae5202fecb0555cf7381a0bde4230f3fd51e5e06eb5bfaced69e64b1969"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_10.png",
+      "target": "public/assets/campus/v4/roads/road-10.png",
+      "sha256": "ee8598d82aa1bda18ba5ce3f9e6ee16ca1e0a8ec9a19b28504f98050456a3f63"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_11.png",
+      "target": "public/assets/campus/v4/roads/road-11.png",
+      "sha256": "891275a1d7dae3a44d05435cb94d884c4a45bc91020bc340bd127d80e8c331cd"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_12.png",
+      "target": "public/assets/campus/v4/roads/road-12.png",
+      "sha256": "cfa78c71f66f523c23efafc3c15872657cfb794d4f18fa9970041004a6dc2296"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_13.png",
+      "target": "public/assets/campus/v4/roads/road-13.png",
+      "sha256": "215bb83cce2387265abd06c8fbbbc91c00b2979b7bd167c54c2c43c1e415f652"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_14.png",
+      "target": "public/assets/campus/v4/roads/road-14.png",
+      "sha256": "562a75d97b06f0ebdb039c905cc936edb6049d46425b8f51131a2b39a576212a"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_15.png",
+      "target": "public/assets/campus/v4/roads/road-15.png",
+      "sha256": "ecdce83398a284498eb14a389870c7264b5e1626dfa66a0b808f84f168488c84"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_16.png",
+      "target": "public/assets/campus/v4/roads/road-16.png",
+      "sha256": "8d63f0e960dacac02dd62ff1673026fc584175023bb17246840ab84cf3b9b241"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_17.png",
+      "target": "public/assets/campus/v4/roads/road-17.png",
+      "sha256": "bb196a5980c408acc31f56f5effd7afebe90234d26bd4a10685e0d70c833e0f8"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_18.png",
+      "target": "public/assets/campus/v4/roads/road-18.png",
+      "sha256": "e46d1ecd5632948e63e292f0801005deede713fdb599faf760825da1fbcf92ce"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_19.png",
+      "target": "public/assets/campus/v4/roads/road-19.png",
+      "sha256": "6328da7d015aba2d22933c7c7d16cc411906f431e50c65e400033d597fd01fe8"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_20.png",
+      "target": "public/assets/campus/v4/roads/road-20.png",
+      "sha256": "4800d66cc51c65ae4e1cfe6fec773a9aa804ba65a6ec11cbb87b9b37e0fe894b"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_21.png",
+      "target": "public/assets/campus/v4/roads/road-21.png",
+      "sha256": "2fbec0c92bd732f81b834d620a56ecc724a74eb1299d953109d6f252782c5f99"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_22.png",
+      "target": "public/assets/campus/v4/roads/road-22.png",
+      "sha256": "26549fb1a1ac24e04d22391433ed38abac2d8c328d6d62a14f7d73dfd039e632"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_23.png",
+      "target": "public/assets/campus/v4/roads/road-23.png",
+      "sha256": "633b54a389061425870b192e39ba865837035ed1a02ea99b406f705fb6e71063"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_24.png",
+      "target": "public/assets/campus/v4/roads/road-24.png",
+      "sha256": "e16b615deb136f1500c39886c7571004c81a05cdb591e4b89fc7ff54b3831da4"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_25.png",
+      "target": "public/assets/campus/v4/roads/road-25.png",
+      "sha256": "5fc8d5ff225ab2e06170f89717ab63c674cf98df041d87fef2073a9a9e683182"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_26.png",
+      "target": "public/assets/campus/v4/roads/road-26.png",
+      "sha256": "787248b0b0dc9742701af78c73a8d2ee61e91cb111bc6a0d654f078a80d69e73"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_27.png",
+      "target": "public/assets/campus/v4/roads/road-27.png",
+      "sha256": "90a8eb995cbeafc0c979f3d5d082d04d82f76c9a9e65306fcb1c5a9f2b665e52"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_28.png",
+      "target": "public/assets/campus/v4/roads/road-28.png",
+      "sha256": "1587d3af3f5e8ae1de01b4eb1b942d2838346370408660246695e5fb4f0fa10f"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_29.png",
+      "target": "public/assets/campus/v4/roads/road-29.png",
+      "sha256": "c227daa482af2e2d504b8a696ac829d87262146bb07a5dda75d213520bb988cf"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_30.png",
+      "target": "public/assets/campus/v4/roads/road-30.png",
+      "sha256": "b2ee6791a699678ecc12d7b3c339c454d44637781dbbc10d8ab49c3759a815d5"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_31.png",
+      "target": "public/assets/campus/v4/roads/road-31.png",
+      "sha256": "48750e8b0c120f16b664f8343703177fc2538a4c3c6a8758920a1672ab1fd0d4"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_32.png",
+      "target": "public/assets/campus/v4/roads/road-32.png",
+      "sha256": "e96026cd35f7f776fa38346e60bec6b13ba837039d889d235e318d73f9c907ff"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_33.png",
+      "target": "public/assets/campus/v4/roads/road-33.png",
+      "sha256": "1cbb18d0ffe1163d56b281b97fe492a7da61310676b3679f8de59df88614050a"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_34.png",
+      "target": "public/assets/campus/v4/roads/road-34.png",
+      "sha256": "f07745031954d05e6b8f94335cb06603960d22e9704cae68957d8f55f9b1aecd"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_35.png",
+      "target": "public/assets/campus/v4/roads/road-35.png",
+      "sha256": "c6fceb6c4f5d83ab85812d960e9b3e1b8ebd4e395fab4393b9c4536bddd16b05"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_36.png",
+      "target": "public/assets/campus/v4/roads/road-36.png",
+      "sha256": "d7ea29c61890b8bd50f62fd0a0eb6d1d58a78032e3d40527bc0d51ff5760458b"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_37.png",
+      "target": "public/assets/campus/v4/roads/road-37.png",
+      "sha256": "a31160d1444fdcf63b52b724dd3083d118bbcaa36b59bc5ad0973d6856de5858"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_38.png",
+      "target": "public/assets/campus/v4/roads/road-38.png",
+      "sha256": "10998c7f7f3904e22a4cc34029de1c910b605775aaab2e122dddc6e278861fa9"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_39.png",
+      "target": "public/assets/campus/v4/roads/road-39.png",
+      "sha256": "4ce114bada5087827123ba6dc9ca8e84baa6f3c84db93e12423af2295a654c19"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_40.png",
+      "target": "public/assets/campus/v4/roads/road-40.png",
+      "sha256": "d1758232ae5f42edda4d265cd34479fe8d87ceaea5ebcb939c395dcf7df3ff13"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_41.png",
+      "target": "public/assets/campus/v4/roads/road-41.png",
+      "sha256": "516056be1847a1b289ca9fb2c96150f05f6d38ebe935ab12cdb0acb53e4792c0"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_42.png",
+      "target": "public/assets/campus/v4/roads/road-42.png",
+      "sha256": "ff3775b2db534bd9fda6d04847c776bfcef6ef225a14e61d6984e5ea5ab7cb91"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_43.png",
+      "target": "public/assets/campus/v4/roads/road-43.png",
+      "sha256": "7a31e66e924fd20608f3243fd7f7e72a5ec46a8d4eea4ce5f31053529ae38b8a"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_44.png",
+      "target": "public/assets/campus/v4/roads/road-44.png",
+      "sha256": "07f8ee63bfb0e8158d75b52187679e9cf0004917034bfa328541520a7f0375e8"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_45.png",
+      "target": "public/assets/campus/v4/roads/road-45.png",
+      "sha256": "7c8138e552c9c30d1c798033f544544e20280569f194819097347ff2072c44b1"
+    },
+    {
+      "source": "Pulse/autotile/road/tile_46.png",
+      "target": "public/assets/campus/v4/roads/road-46.png",
+      "sha256": "8d7a5afaef5073fb7dc55aaacc79ae786d9ea93906e0fa6842856cd1b9aea438"
+    },
+    {
+      "source": "Pulse/props/tree.png",
+      "target": "public/assets/campus/v4/props/tree.png",
+      "sha256": "8abc55a7667117adb968e30a7a0cf31c3f8c1da4031c88d15356710797c47f03"
+    },
+    {
+      "source": "Pulse/props/bush.png",
+      "target": "public/assets/campus/v4/props/bush.png",
+      "sha256": "41319a279b60f1bc708af6a906c03f5c17efcd49edc1ba6f901a4673f51ae5f0"
+    },
+    {
+      "source": "Pulse/props/streetlamp.png",
+      "target": "public/assets/campus/v4/props/streetlamp.png",
+      "sha256": "2f123b6873e8e4b290eaf3f7f029b5451987bc479e3a872e8eb30cb8c4ab0c36"
+    },
+    {
+      "source": "Pulse/props/park_bench.png",
+      "target": "public/assets/campus/v4/props/park_bench.png",
+      "sha256": "8e2629547000b0489d0aa83694a350d872021c35fbd3ebab8d45450ec1bb1cfa"
+    },
+    {
+      "source": "Pulse/props/potted_plant.png",
+      "target": "public/assets/campus/v4/props/potted_plant.png",
+      "sha256": "2e80e0d082179995163605cffbae0c04ae629e4b2d286bbe21ed1ba16b506c01"
+    },
+    {
+      "source": "Pulse/props/manhole_cover.png",
+      "target": "public/assets/campus/v4/props/manhole_cover.png",
+      "sha256": "17b45f5d75ffbd5ab0af0114fdc414f8c21b5b6702007ccfe52f35a2c652952a"
+    },
+    {
+      "source": "Pulse/tree.png + declared recolor",
+      "target": "public/assets/campus/v4/props/tree-pine.png",
+      "sha256": "5da1ebeadfcc09f1c5adb741be4f98da2249020290c801a22f8c8a21ebe40a2d"
+    },
+    {
+      "source": "Pulse/tree.png + declared recolor",
+      "target": "public/assets/campus/v4/props/tree-autumn.png",
+      "sha256": "c7424e795021474625944181d076aaaf59e59f5194fc916465829d7b8b1f6d72"
+    },
+    {
+      "source": "Project-authored pixel flowerbed",
+      "target": "public/assets/campus/v4/props/flowerbed.png",
+      "sha256": "0c4134a2dc9029a170af07b70cc231d0056dd643c38eef84650aa0c5ae8cd05b"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[81, 82, 85], [124, 125, 130], [362, 282, 364]]; original pixel accent campus",
+      "target": "public/assets/campus/v4/buildings/library-campus-3.png",
+      "sha256": "fa8b7c5292618c1f2209a22b78c7e125147449f56a25ab95507c2fdb13935af5"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[81, 85], [362, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/library-campus-2.png",
+      "sha256": "07cd1024f908d42f5d651de516c3b1665790318a8269c9cc61cb4ca185087796"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/library-campus-1.png",
+      "sha256": "f4bbc61cba9f540abcf81d292a5fc975f0d370f58dd4bacc1411f27af6de4b51"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[81, 82, 85], [124, 125, 130], [362, 282, 364]]; original pixel accent brick",
+      "target": "public/assets/campus/v4/buildings/library-brick-3.png",
+      "sha256": "a744f1cb72c25e6d5512bd5af91a3244f9640ea060d19fa4072905fbf405af5f"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[81, 85], [362, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/library-brick-2.png",
+      "sha256": "66da80706d980badda3d5d90ee8921dcf311b22ce95de06dbadb8df96442b84f"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/library-brick-1.png",
+      "sha256": "9caf8d06cebe690da636d3630a6a974c646eeb976a71cb9b85a30df605515e15"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[81, 82, 85], [124, 125, 130], [362, 282, 364]]; original pixel accent blue",
+      "target": "public/assets/campus/v4/buildings/library-blue-3.png",
+      "sha256": "1cac8ab4cd9786926de179e01fca5a6cafa1623c4d94be000e49c10f1392cd6b"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[81, 85], [362, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/library-blue-2.png",
+      "sha256": "988424ca10d24f02677a66e475f8dabb757c03fd80a5efa994343a54dea23a62"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/library-blue-1.png",
+      "sha256": "fd7059079dbf8b212ba8addb429952abb46af7d231f28554f1d2b17cbf3f4724"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[135, 136, 137], [124, 128, 130], [363, 365, 364]]; original pixel accent campus",
+      "target": "public/assets/campus/v4/buildings/teaching-campus-3.png",
+      "sha256": "f04842c26efd3701392b8210cbf6721b4a9545968b6798035f8257c792d6a7a1"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[135, 137], [363, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/teaching-campus-2.png",
+      "sha256": "0f891dc187b5b85642e35a4e3d99676d9d8117df8e25b7ad54c6b5657629db00"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/teaching-campus-1.png",
+      "sha256": "8a1f4a496f0e6a595144915b161e2f6bf29bfd12aeabba3cdc43903ac7f08f57"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[135, 136, 137], [124, 128, 130], [363, 365, 364]]; original pixel accent brick",
+      "target": "public/assets/campus/v4/buildings/teaching-brick-3.png",
+      "sha256": "c9e5162f85e2e5dde37388e4ed6169a33db8011283fef3c2ddb8230df9c22d48"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[135, 137], [363, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/teaching-brick-2.png",
+      "sha256": "88b436c4d63fdd7039cd9f3bae7329faad10822f828e47884caebb4d0257540c"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/teaching-brick-1.png",
+      "sha256": "a5d3f5e726c04e02f6568132d675a63a071bfc389f547c9b9ffd910405c859b7"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[135, 136, 137], [124, 128, 130], [363, 365, 364]]; original pixel accent blue",
+      "target": "public/assets/campus/v4/buildings/teaching-blue-3.png",
+      "sha256": "7c0244b09a1e7aa3e212dd0417d89de4ae19a827fb17100cc8cebcfa3fb9a324"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[135, 137], [363, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/teaching-blue-2.png",
+      "sha256": "e285decfd6bc00adfaff6fb0859808849d9488894769f137e2c1a0ae1069d01e"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/teaching-blue-1.png",
+      "sha256": "ea9881d22408d5ec06ee91e09d941a1dafdf4f8ea965aac07afcd4025afafbdc"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[43, 44, 45], [70, 71, 72], [205, 282, 211]]; original pixel accent campus",
+      "target": "public/assets/campus/v4/buildings/canteen-campus-3.png",
+      "sha256": "027d59a97260fde09716a83ff558d396d7684c345be8c5e0af41bed47c3df17d"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[43, 45], [205, 211]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/canteen-campus-2.png",
+      "sha256": "feaf25c868141e7314fe39056ea00185db7441d617d51480b1b8a706c731be68"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/canteen-campus-1.png",
+      "sha256": "87837bfd8883023ec931ec819a07ef9d4c2eb3904ecabdab5a2cf5a73447a313"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[43, 44, 45], [70, 71, 72], [205, 282, 211]]; original pixel accent brick",
+      "target": "public/assets/campus/v4/buildings/canteen-brick-3.png",
+      "sha256": "e56200741ab95fbd4831b66d505641d28abf8286de585fd4c5b3b3d17f548307"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[43, 45], [205, 211]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/canteen-brick-2.png",
+      "sha256": "3f3c4f021d04eb774f42f5a32476a7a0b0c2ec6eb296365a6a8503838932dc88"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/canteen-brick-1.png",
+      "sha256": "b1e93ebd6d3ed821a105145ed5ca39e5f4e48288b8c1494bc057f17b8c5461a5"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[43, 44, 45], [70, 71, 72], [205, 282, 211]]; original pixel accent blue",
+      "target": "public/assets/campus/v4/buildings/canteen-blue-3.png",
+      "sha256": "91b912087924691a301676a6d911c35be50b44c51a6882beb66735bd9839a2a3"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[43, 45], [205, 211]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/canteen-blue-2.png",
+      "sha256": "a64cacd2d613686f020b5a17246c85893c2b23aac503091b48d657af1f18c45a"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/canteen-blue-1.png",
+      "sha256": "d21c779cecaefbd65058b182df99a5467e8cdf1eb8e04c68639d45f2be217468"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[328, 329, 330], [205, 206, 211], [281, 282, 283]]; original pixel accent campus",
+      "target": "public/assets/campus/v4/buildings/shop-campus-3.png",
+      "sha256": "91c8ac39e53405e34f368597f522fd22195d2f44422e10d8d31adf605f116093"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[328, 330], [281, 283]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/shop-campus-2.png",
+      "sha256": "971ba0c998e9d27112462a77748f4c43a182eb0bfe5106d8d90d4c1d7a94dc46"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/shop-campus-1.png",
+      "sha256": "e8be56335c6796c242ca3fc8138fb8632ce33a6d3e0f25a7f8c7c52390ec1e7f"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[328, 329, 330], [205, 206, 211], [281, 282, 283]]; original pixel accent brick",
+      "target": "public/assets/campus/v4/buildings/shop-brick-3.png",
+      "sha256": "d691bcfccbac7082660ae027113e18d350a70765a1f4eb9605ac932a75ee370d"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[328, 330], [281, 283]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/shop-brick-2.png",
+      "sha256": "63d67c666a487d2a43bdfcd113c7551e0967401379e98c3b64469fca769ec262"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/shop-brick-1.png",
+      "sha256": "579553c0a8d6277e6eae3080b3dd5e9a926fec7d35af98a6ae5a203985fe9927"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[328, 329, 330], [205, 206, 211], [281, 282, 283]]; original pixel accent blue",
+      "target": "public/assets/campus/v4/buildings/shop-blue-3.png",
+      "sha256": "02320687db6c270f3b7540a32aad23b3ecc963d096d7cd88df94503fa0ada4ef"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[328, 330], [281, 283]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/shop-blue-2.png",
+      "sha256": "3207acafa4fdb19f3597697b6289ed85c87c55566ef64eeb0f78be117438a17c"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/shop-blue-1.png",
+      "sha256": "7e28705ecce45248eff598de15caadb266ddf9706ab8da5fb8681cd695b6cb75"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[108, 109, 113], [178, 179, 184], [362, 363, 364]]; original pixel accent campus",
+      "target": "public/assets/campus/v4/buildings/dormitory-campus-3.png",
+      "sha256": "0dff4d36cce9492481a7a9568882e0d1b1f282aef5acfe16d7cabbc6ad98abfc"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[108, 113], [362, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/dormitory-campus-2.png",
+      "sha256": "5c8bea41696833c35a97f6f87c7a53492b55bf2a4f056d2a62f651e97575a4b5"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/dormitory-campus-1.png",
+      "sha256": "f005ababa1972d1ffeb1f280c9ca58e1aefcd3378d5b9734435bf557e593c837"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[108, 109, 113], [178, 179, 184], [362, 363, 364]]; original pixel accent brick",
+      "target": "public/assets/campus/v4/buildings/dormitory-brick-3.png",
+      "sha256": "f78852f23174b843e0fedcbe11928c117eefb925ed61d14700741aa2fd0737e0"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[108, 113], [362, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/dormitory-brick-2.png",
+      "sha256": "51f79f1d2ac2768ee33a0b86c1382d24faa7b7fc65a00620fe9aa0abf487094d"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/dormitory-brick-1.png",
+      "sha256": "bc707768ab85f0fa3ce5b112368f536c3e39a6ba596d4a19671a161fcc6a7097"
+    },
+    {
+      "source": "Kenney RPG Urban 3x3 matrix [[108, 109, 113], [178, 179, 184], [362, 363, 364]]; original pixel accent blue",
+      "target": "public/assets/campus/v4/buildings/dormitory-blue-3.png",
+      "sha256": "d44d96e84c2f1de0deb9ed81796e46234c88743ad40169feb8aa818ce28dc9b2"
+    },
+    {
+      "source": "Kenney RPG Urban corners [[108, 113], [362, 364]]; 2x2 authored accent",
+      "target": "public/assets/campus/v4/buildings/dormitory-blue-2.png",
+      "sha256": "8592596574ebd141d58c6ae8173f6d7bcbc8c5c3358535eeaf3710cb67b327c8"
+    },
+    {
+      "source": "Project-authored 16px tiny building; no fractional scaling",
+      "target": "public/assets/campus/v4/buildings/dormitory-blue-1.png",
+      "sha256": "681faa71ca8b42c87f8a3df1ffb817a4b7b71f06075504ae66fcd22c0c08bbea"
+    }
+  ],
+  "license": "Pulse and Kenney: CC0 1.0; see included license notices"
+}

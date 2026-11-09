@@ -1,0 +1,234 @@
+{
+  "mapSeed": 20261104,
+  "eventSeed": 314159,
+  "map": {
+    "width": 24,
+    "height": 14,
+    "roadCells": 20,
+    "turns": 2,
+    "buildings": 5
+  },
+  "rounds": [
+    {
+      "period": "day",
+      "weather": "clear",
+      "waterFrames": [
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        }
+      ],
+      "floodedRoadCells": 0,
+      "roadAccidents": 0,
+      "buildingAccidents": 0,
+      "safetyScore": 100,
+      "comfortScore": 15
+    },
+    {
+      "period": "day",
+      "weather": "clear",
+      "waterFrames": [
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        }
+      ],
+      "floodedRoadCells": 0,
+      "roadAccidents": 0,
+      "buildingAccidents": 0,
+      "safetyScore": 100,
+      "comfortScore": 15
+    },
+    {
+      "period": "night",
+      "weather": "heavy",
+      "waterFrames": [
+        {
+          "total": 60,
+          "max": 3
+        },
+        {
+          "total": 120,
+          "max": 6
+        },
+        {
+          "total": 180,
+          "max": 9
+        },
+        {
+          "total": 240,
+          "max": 12
+        },
+        {
+          "total": 300,
+          "max": 15
+        },
+        {
+          "total": 360,
+          "max": 18
+        },
+        {
+          "total": 420,
+          "max": 21
+        },
+        {
+          "total": 480,
+          "max": 24
+        }
+      ],
+      "floodedRoadCells": 20,
+      "roadAccidents": 7,
+      "buildingAccidents": 3,
+      "safetyScore": 22,
+      "comfortScore": 15
+    },
+    {
+      "period": "night",
+      "weather": "heavy",
+      "waterFrames": [
+        {
+          "total": 60,
+          "max": 3
+        },
+        {
+          "total": 120,
+          "max": 6
+        },
+        {
+          "total": 180,
+          "max": 9
+        },
+        {
+          "total": 240,
+          "max": 12
+        },
+        {
+          "total": 300,
+          "max": 15
+        },
+        {
+          "total": 360,
+          "max": 18
+        },
+        {
+          "total": 420,
+          "max": 21
+        },
+        {
+          "total": 480,
+          "max": 24
+        }
+      ],
+      "floodedRoadCells": 20,
+      "roadAccidents": 7,
+      "buildingAccidents": 1,
+      "safetyScore": 46,
+      "comfortScore": 15
+    },
+    {
+      "period": "night",
+      "weather": "clear",
+      "waterFrames": [
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        },
+        {
+          "total": 0,
+          "max": 0
+        }
+      ],
+      "floodedRoadCells": 0,
+      "roadAccidents": 0,
+      "buildingAccidents": 0,
+      "safetyScore": 100,
+      "comfortScore": 15
+    }
+  ],
+  "final": {
+    "averageSafety": 73.6,
+    "averageComfort": 15,
+    "totalScore": 47,
+    "grade": "C"
+  }
+}

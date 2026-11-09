@@ -22,3 +22,42 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local submissions, historical builds and working records
+/release/
+/[0-9]*/
+/提交补充材料*/
+/.learnings/
+/README_V4*.md
+/vibe-coding-11.16*
+/artifacts/*
+!/artifacts/baseline/
+/artifacts/baseline/*
+!/artifacts/baseline/pre-v4-20261104/
+/artifacts/baseline/pre-v4-20261104/*
+!/artifacts/baseline/pre-v4-20261104/core-baseline.json
+
+# Archived template examples remain local
+/log.js
+/screenshot.png
+/src/game/
+/public/assets/bg.png
+/public/assets/logo.png
+/public/favicon.png
+
+# Publish only current user/developer/asset documentation
+/docs/*
+!/docs/使用手册.md
+!/docs/开发及算法说明.md
+!/docs/开源项目和素材授权.md
+!/docs/素材来源与授权_V4.md
+!/docs/images/
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
